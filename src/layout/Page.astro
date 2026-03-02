@@ -1,9 +1,14 @@
 ---
-console.log("This runs in your terminal, not the browser!");
+const { title } = Astro.props;
 ---
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Matters JS + Astro {title}</title>
+  </head>
   <body>
     <slot />
+    <script src="../layout/Index.js"></script>
   </body>
 </html>
