@@ -4,6 +4,7 @@ import Page from "../layout/Page.astro";
 
 <Page>
   <section class="shapes"></section>
+  <section class="difference"></section>
 </Page>
 
 <style>
@@ -19,5 +20,16 @@ import Page from "../layout/Page.astro";
 
     margin: 0;
     padding: 0;
+  }
+
+  .difference {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
   }
 </style>
